@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrukHotel Guide - Destinations</title>
+    <style>
+        /* Consistent Global Styles from Contact Page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            text-align: center; /* Consistent with Contact page body */
+        }
+
+        /* Navbar - Exactly as Contact Page */
+        header {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px; /* Matches visual weight of contact page */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container for Content */
+        .container { 
+            max-width: 1100px; 
+            margin: 40px auto; 
+            padding: 0 20px;
+            text-align: left; /* Reset text-align for content blocks */
+        }
+        
+        /* Destination Layout */
+        .destination-row { 
+            display: flex; 
+            gap: 40px; 
+            margin-bottom: 60px; 
+            align-items: flex-start; 
+        }
+
+        .dest-image-wrapper { flex: 1; }
+        .dest-image-wrapper img { 
+            width: 100%; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+        }
+        
+        .dest-text-wrapper { flex: 1; }
+        
+        /* Typography - Consistent with Contact Section H2 */
+        .dest-text-wrapper h2, .dest-image-wrapper h2 { 
+            color: #333;
+            font-size: 24px; 
+            margin-top: 0; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+        }
+
+        p { 
+            line-height: 1.6; 
+            color: #555; 
+            font-size: 15px; 
+        }
+
+        /* Hotel Links Section */
+        .hotels-list { margin-top: 20px; }
+        .hotels-list h4 { 
+            margin-bottom: 10px; 
+            border-bottom: 1px solid #ddd; 
+            padding-bottom: 5px; 
+            color: #333;
+        }
+        
+        .links-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
+        }
+
+        .links-grid a { 
+            color: #4a6fa5; 
+            text-decoration: none; 
+            font-size: 14px; 
+            transition: color 0.3s; 
+        }
+
+        .links-grid a:hover { 
+            color: #b08d57; 
+            text-decoration: underline; 
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .destination-row { flex-direction: column; }
+            header { flex-direction: column; gap: 10px; padding: 20px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>DrukHotel Guide</h2>
+    <nav>
+        <a href="Profile.html">My Profile</a>
+        <a href="Homepage.html">Home</a>
+        <a href="Hotelpage.html">Hotels</a>
+        <a href="Destination.html">Destinations</a>
+        <a href="Culture.html">Culture</a>
+        <a href="Contact us.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    
+    <div class="destination-row">
+        <div class="dest-image-wrapper">
+            <h2>PARO</h2>
+            <img src="https://eastindiatour.com/wp-content/uploads/elementor/thumbs/Paro-1-qiq6sq9y5s59hbk9p3kgry7smpyg0df7sxa04usd4g.jpg" alt="Paro Bhutan">
+        </div>
+    
+        <div class="dest-text-wrapper">
+            <h2>Paro</h2>
+            <p>Paro is one of the most popular and picturesque regions of Bhutan, located in the western part of the country. It is well known for its rich history, beautiful valleys, traditional architecture, and important cultural landmarks. Paro is surrounded by green mountains, peaceful rivers, and fertile farmland, making it one of the most scenic places in Bhutan. The district is home to the famous Paro Taktsang, also known as the Tiger’s Nest Monastery, which is one of Bhutan’s most sacred and visited sites. Paro also contains Rinpung Dzong and Bhutan’s only international airport, Paro International Airport. The region plays an important role in Bhutanese culture, tourism, and religion while preserving its traditional lifestyle and natural beauty.
+</p>
+            
+            <div class="hotels-list">
+                <h4>Hotels Available</h4>
+                <div class="links-grid">
+                    <a href="hotel details.html">COMO Uma, Paro</a>
+                    <a href="Hotel details.html">Dewachen Resort, Paro</a>
+                    <a href="Hotel details.html">Paro Heritage Hotel, Paro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="destination-row">
+        <div class="dest-text-wrapper">
+            <h2>THIMPHU</h2>
+            <p>Thimphu is the capital and largest city of Bhutan, located in the western part of the country. It is the political, economic, and cultural center of Bhutan, where modern development blends beautifully with traditional Bhutanese culture. Thimphu is known for its clean environment, peaceful atmosphere, colorful architecture, and scenic mountain views. The city is home to important landmarks such as Tashichho Dzong, Buddha Dordenma, and Memorial Chorten, which attract many visitors every year. Thimphu also serves as the main center for education, government offices, businesses, and tourism in Bhutan while still preserving the country’s unique traditions and values.
+</p>
+            
+            <div class="hotels-list">
+                <h4>Hotels Available</h4>
+                <div class="links-grid">
+                    <a href="Hotel details.html">Le Méridien, Thimphu</a>
+                    <a href="Hotel details.html">Phuntsho Pelri, Thimphu</a>
+                    <a href="Hotel details.html">Six Senses, Thimphu</a>
+                </div>
+            </div>
+        </div>
+        <div class="dest-image-wrapper">
+            <h2>Thimphu</h2>
+            <img src="https://th.bing.com/th/id/OSK.HEROOQcvZlkv36oWJZBgE7cxSUsP2tjHgL8Qcd4y3_P7C4k?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Thimphu Bhutan">
+        </div>
+    </div>
+
+    <div class="destination-row">
+        <div class="dest-image-wrapper">
+            <h2>BUMTHANG</h2>
+            <img src="https://media.gettyimages.com/id/157282251/photo/dramatic-sunrays-over-jakar-dzong.jpg?s=612x612&w=0&k=20&c=SkiTzIiWT9oPazB5BAhkn3p1glzAB3xk6KIXinwsLQ0=" alt="Bumthang Bhutan">
+        </div>
+    
+        <div class="dest-text-wrapper">
+            <h2>Bumthang</h2>
+            <p>Bumthang is one of the most beautiful and culturally rich regions of Bhutan, located in the central part of the country. Known as the spiritual heartland of Bhutan, Bumthang is famous for its ancient monasteries, peaceful valleys, traditional villages, and stunning natural scenery. The district is surrounded by green mountains, pine forests, and flowing rivers, creating a calm and refreshing environment. It is also home to many important religious sites such as Jakar Dzong and Kurjey Lhakhang, which attract both tourists and pilgrims. The people of Bumthang are known for preserving Bhutanese traditions, culture, and local crafts, making the region an important center of Bhutanese heritage.
+</p>
+            
+            <div class="hotels-list">
+                <h4>Hotels Available</h4>
+                <div class="links-grid">
+                    <a href="hotel details.html">Amankora, Bumthang</a>
+                    <a href="Hotel details.html">Hotel Jakar, Bumthang</a>
+                    <a href="Hotel details.html">Hotel Ugyenling, Bumthang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

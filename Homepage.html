@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrukHotel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; color: #333; line-height: 1.6; }
+
+        /* Navigation - Updated to match Contact Us spacing/font but kept transparent */
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px; /* Exact padding from Contact page */
+            z-index: 10;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo { 
+            color: white; 
+            margin: 0; 
+            font-family: Arial; 
+            font-size: 24px; /* Scaled to match the 'h2' visual weight */
+            font-weight: bold;
+        }
+
+        nav ul { 
+            display: flex; 
+            list-style: none; 
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li { 
+            margin-left: 20px; /* Exact margin from Contact page nav a */
+        }
+
+        nav ul li a { 
+            color: white; 
+            text-decoration: none; 
+            font-size: 16px; /* Exact font-size from Contact page */
+        }
+
+        nav ul li a:hover { 
+            text-decoration: underline; 
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://wallpapercave.com/wp/wp4205340.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+        }
+        .hero-content { color: white; max-width: 600px; }
+        .hero-content h1 { font-size: 3rem; font-weight: 800; line-height: 1.1; margin-bottom: 10px; }
+        .hero-content p { font-size: 1.2rem; font-weight: 300; margin-bottom: 20px; }
+
+        /* Featured Section */
+        .featured { padding: 60px 8%; text-align: center; background: #fff; }
+        .featured h2 { font-weight: 800; margin-bottom: 40px; letter-spacing: 1px; }
+        .hotel-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+            margin-bottom: 40px;
+        }
+        .card { text-align: left; }
+        .card img { 
+            width: 100%; 
+            aspect-ratio: 16/9; 
+            object-fit: cover; 
+            border-radius: 15px; 
+            margin-bottom: 15px; 
+        }
+        .card h3 { font-size: 1.1rem; font-weight: 700; }
+        .card p { font-size: 0.85rem; color: #666; }
+
+        /* Footer Bar */
+        footer {
+            background-color: #5d7b93;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DrukHotel Guide</div>
+        <ul>
+            <li><a href="Profile.html">My Profile</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="Hotelpage.html">Hotels</a></li>
+            <li><a href="Destination.html">Destinations</a></li>
+            <li><a href="Culture.html">Culture</a></li>
+            <li><a href="Contact us.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>DRUKHOTEL GUIDE:</h1>
+            <p>Discover Serenity in Bhutan.<br>A Land of Ancient Monasteries and Genuine Hospitality.</p>
+        </div>
+    </header>
+
+    <section class="featured">
+        <h2>FEATURED HOTELS</h2>
+        
+        <div class="hotel-grid">
+            <div class="card">
+                <img src="https://www.theluxevoyager.com/wp-content/uploads/2018/02/Uma-Paro.jpg" alt="Hotel 1">
+                <h3>Como Uma, Paro</h3>
+                <p>Elegant designs with panoramic views.</p>
+            </div>
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNL3exZs8k6s43f2PEGhVA0Tr2NwFyvVUEXQucB=w252-h168-k-no" alt="Hotel 2">
+                <h3>Le Meridien, Thimphu</h3>
+                <p>Wellness-focused luxury stay.</p>
+            </div>
+            <div class="card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/db/9b/5f/amankora-bumthang-courtyard.jpg?w=700&h=400&s=1" alt="Hotel 3">
+                <h3>Amankora, Bumthang</h3>
+                <p>Authentic Bhutanese hospitality.</p>
+            </div>
+        </div>
+
+        <div class="hotel-grid">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.1h5N-_DMJOybRginsU2heQHaB7?w=322&h=91&c=7&r=0&o=7&pid=1.7&rm=3" alt="Hotel 4">
+                <h3>Dewachen Resort, Paro</h3>
+                <p>Traditional architecture and comfort.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/yDYDvej0AsQ/maxresdefault.jpg" alt="Hotel 5">
+                <h3>Phuntsho Khangsar, Thimphu</h3>
+                <p>Cozy stay in the heart of the capital.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIYClEb-qnWczSr50Eop68339cozgE1EN9eg&s" alt="Hotel 6">
+                <h3>Hotel Jakar, Bumthang</h3>
+                <p>Exploring the spiritual heartland.</p>
+            </div>
+        </div>
+
+        <div class="hotel-grid">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.gTooWZR82aeeVhpD_1A3CwHaEK?w=267&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Hotel ">
+                <h3>Paro Heritage Hotel, Paro</h3>
+                <p>Rich history meets modern luxury.</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.084b7708879d3b24babc562d1e37af41?rik=qnTpaCiyTINCbw&pid=ImgRaw&r=0" alt="Hotel ">
+                <h3>Six Senses, Thimphu</h3>
+                <p>The ultimate wellness retreat.</p>
+            </div>
+            <div class="card">
+                <img src="https://bhutanhotels.com.bt/wp-content/uploads/2023/03/Hotel-Ugyenling-View-with-Tree.jpg" alt="Hotel ">
+                <h3>Hotel Ugyenling, Bumthang</h3>
+                <p>Serene views and local charm.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 DrukHotel Guide - Quick links to popular destinations
+    </footer>
+
+</body>
+</html>

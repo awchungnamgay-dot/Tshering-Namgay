@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Details</title>
+    <style>
+        header {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px; /* Matches visual weight of contact page */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        body { font-family: Arial; margin: 0; padding: 20px; }
+        .details-container { display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; max-width: 1000px; margin: auto; }
+        .main-img { width: 100%; border-radius: 10px; }
+        .thumbs { display: flex; gap: 10px; margin-top: 10px; }
+        .thumbs img { width: 70px; height: 50px; object-fit: cover; }
+        .info-box { background: #eef2f5; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+    </style>
+</head>
+<!-- Header -->
+<header>
+    <h2>DrukHotel Guide</h2>
+    <nav>
+        <a href="Profile.html">My Profile</a>
+        <a href="Homepage.html">Home</a>
+        <a href="Hotelpage.html">Hotels</a>
+        <a href="Destination.html">Destinations</a>
+        <a href="Culture.html">Culture</a>
+        <a href="Contact us.html">Contact</a>
+    </nav>
+</header>
+<body>
+    <div class="details-container">
+        <div>
+            <img class="main-img" src="https://lh3.googleusercontent.com/p/AF1QipPppostDqgAv-dQlTFqOOCzFi2ElRYYuq1NDy5P=s680-w680-h510-rw">
+            <div class="thumbs">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipO7I4gsX711TzsP4tDyLXqvoDKyx0jvPQoobltA=s680-w680-h510-rw">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMCJ0Y3szZraAC84jP3EtP9uZksZ5QFCU47tdqi=s680-w680-h510-rw">
+                <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=100">
+            </div>
+            <h2>HISTORY</h2>
+            <p>This property reflects centuries of Bhutanese architecture, originally serving as a gateway to the Paro valley.</p>
+            <h2>STYLE</h2>
+            <p>Blending contemporary minimalism with classic Bhutanese woodwork and artisanal details.</p>
+        </div>
+        <div>
+            <div class="info-box">
+                <h2>DESCRIPTION</h2>
+                <p>Located on a hill overlooking the valley, this hotel offers peace, quiet, and unmatched luxury services.</p>
+            </div>
+            <div class="info-box">
+                <h2>FACILITIES</h2>
+                <p>🍴 Organic Food<br>🛏️ King Rooms<br>👁️ Mountain View</p>
+            </div>
+            <div class="info-box">
+                <h2>PROPERTY TYPE</h2>
+                <p>✅ Luxury<br>✅ Traditional<br>✅ Eco-Friendly</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

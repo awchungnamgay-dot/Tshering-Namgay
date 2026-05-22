@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhutanese Culture - DrukHotel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #f4f7f6; color: #333; }
+
+         /* Navbar */
+    .tt {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: arial;
+    }
+
+    header h2 {
+            margin: 0;
+            
+    }
+
+    nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration:none;
+            
+    }
+
+    nav a:hover {
+            text-decoration: underline;
+    }
+
+        /* Main Content */
+        .container { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+        
+        .page-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Culture Grid */
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .culture-card { 
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .culture-card:hover { transform: translateY(-10px); }
+
+        .culture-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card-body { padding: 25px; }
+
+        .culture-card h3 { 
+            font-size: 20px; 
+            font-weight: 700; 
+            margin-bottom: 12px; 
+            color: #4a6fa5;
+        }
+
+        .culture-card p { 
+            font-size: 14px; 
+            line-height: 1.7; 
+            color: #555; 
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) { .culture-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) {
+            .culture-grid { grid-template-columns: 1fr; }
+            header { flex-direction: column; gap: 15px; text-align: center; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="tt">
+    <h2>DrukHotel Guide</h2>
+    <nav>
+        <a href="Profile.html">My Profile</a>
+        <a href="Homepage.html">Home</a>
+        <a href="Hotelpage.html">Hotels</a>
+        <a href="Destination.html">Destinations</a>
+        <a href="Culture.html">Culture</a>
+        <a href="Contact us.html">Contact</a>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="page-title">
+            <h1>Cultural Heritage of Bhutan</h1>
+            <p class="subtitle">Explore the unique traditions and spiritual essence of the Land of the Thunder Dragon.</p>
+        </div>
+
+        <div class="culture-grid">
+            <!-- Card 1: Architecture -->
+            <div class="culture-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwf7Y_Miukt5FZCZQufDlbaILhUulVnyN5FQ&s" alt="Bhutanese Architecture">
+                <div class="card-body">
+                    <h3>Sacred Architecture</h3>
+                    <p>Bhutanese architecture is defined by massive <strong>Dzongs</strong> (fortresses) built without using a single nail. These structures serve as the religious and administrative heart of every district, featuring intricate wood carvings and whitewashed walls.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Cuisine -->
+            <div class="culture-card">
+                <img src="https://i.pinimg.com/originals/da/ce/25/dace250c247a9a683334e04477a3477a.jpg" alt="Bhutanese Food">
+                <div class="card-body">
+                    <h3>The Spicy Palate</h3>
+                    <p>Food is a celebration of fire in Bhutan. The national dish, <strong>Ema Datshi</strong>, is a spicy mix of chilies and cheese. Unlike most cultures, Bhutanese cuisine treats the chili as a primary vegetable rather than just a seasoning.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Festivals -->
+            <div class="culture-card">
+                <img src="https://foundbht.com/assets/images/itinerary/mask-dance-thimphu-tshechu-large.webp" alt="Tshechu Festival">
+                <div class="card-body">
+                    <h3>Tshechu Festivals</h3>
+                    <p>Annual religious festivals known as <strong>Tshechus</strong> feature vibrant <strong>Cham dances</strong>. Masked monks perform sacred movements that depict Buddhist teachings, believed to bestow spiritual merit upon all who witness them.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Dress -->
+            <div class="culture-card">
+                <img src="https://amen-api.flamingoitstudio.net/media/attachments/Webp.net-compress-image-5%20Amen%20Bhutan%20Tours%20and%20Treks-1.jpg" alt="Traditional Dress">
+                <div class="card-body">
+                    <h3>Gho & Kira</h3>
+                    <p>National identity is preserved through dress. Men wear the <strong>Gho</strong>, a knee-length robe, while women wear the <strong>Kira</strong>, an elegant ankle-length dress. These are required for formal settings and symbolize national pride.</p>
+                </div>
+            </div>
+
+            <!-- Card 5: Sport -->
+            <div class="culture-card">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/171110132007-bhutan-5-reasons-dress-archery.jpg?q=w_3036,h_2024,x_0,y_0,c_fill/h_618" alt="Archery in Bhutan">
+                <div class="card-body">
+                    <h3>National Sport: Archery</h3>
+                    <p>Archery in Bhutan is more than a sport; it is a community celebration. Matches involve traditional singing, dancing, and social gatherings, with targets placed at an incredible distance of 145 meters.</p>
+                </div>
+            </div>
+
+            <!-- Card 6: Philosophy -->
+            <div class="culture-card">
+                <img src="https://bhutantravelcoordinator.com/wp-content/uploads/2016/12/GNH-Bhutan.jpg" alt="Gross National Happiness">
+                <div class="card-body">
+                    <h3>Gross National Happiness</h3>
+                    <p>Bhutan is the only country in the world that measures its success through <strong>Gross National Happiness (GNH)</strong>. This philosophy prioritizes environmental conservation, cultural preservation, and sustainable development over profit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
